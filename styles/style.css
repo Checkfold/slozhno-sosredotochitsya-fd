@@ -2,4 +2,99 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: var(--page-background-image,
+    url("../images/cover-image.png"));
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-self: center;
 }
+
+.header {
+  margin-block-start: 20px;
+}
+
+.header-top {
+  display: flex;
+}
+
+.header__theme-menu {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__theme-menu-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.header__theme-menu-button {
+  color: var(--color-text);
+  font-family: IBM Plex Mono, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: lowercase;
+  padding: 1.5px 13px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--broder-color-hover);
+}
+
+.rec {
+  inset-inline-end: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.rec::before {
+  content: 'REC';
+  font-family: IBM Plex Mono, sans-serif;
+  color: var(--accent-color);
+  line-height: 25px;
+}
+
+.rec::after {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px var(--accent-color);
+  background: var(--accent-color);
+  inline-size: 9px;
+  block-size: 9px;
+}
+
+.page-title {
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  color: var(--page-title-color);
+  font-weight: 700;
+  font-family: IBM Plex Mono, sans-serif;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  margin-block-start: 239px;
+}
+
+.header-text {
+  width: 491px;
+  height: 71px;
+  background-color: var(--accent-color);
+  color: var(--color-text-header);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  justify-self: end;
+  margin-inline-end: 20px;
+  margin-block-start: 78px;
+}
+
