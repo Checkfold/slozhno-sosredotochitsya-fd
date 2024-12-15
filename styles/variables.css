@@ -4,10 +4,11 @@
 */
 
 :root {
-  --color-text: #FF0070;
   --page-background-image: url("../images/cover-image-dark.png");
   --page-title-color: #DB00FF;
   --accent-color: #FF0070;
   --broder-color-hover: #FF007066;
-  --color-text-header: #000028;
+  --color-text-black: #000028;
+  --color-text-blond: #F1B2CE;
+  
 }
