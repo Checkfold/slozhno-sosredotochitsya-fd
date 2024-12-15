@@ -2,8 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-    background-image: var(--page-background-image,
-    url("../images/cover-image.png"));
+    background-image: var(--page-background-image);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -35,7 +34,7 @@
 }
 
 .header__theme-menu-button {
-  color: var(--accent-color);
+  color: var(--color-red-1, #FF0070);
   font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -48,11 +47,11 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--highlight-color, #FF0070);
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--broder-color-hover);
+  border: 1px solid var(--border-color-hover-1, #FF007066);
 }
 
 .header__theme-menu-button:focus {
@@ -60,7 +59,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end-color: var(--accent-color);
+  border-block-end-color: var(--highlight-color, #FF0070);
 }
 
 .rec {
@@ -71,11 +70,12 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  visibility: var(--rec-wanish, visible);
 }
 
 .rec::before {
   content: 'REC';
-  color: var(--accent-color);
+  color: var(--color-red-1, #FF0070);
   line-height: 25px;
   font-size: 18px;
 }
@@ -84,18 +84,18 @@
   content: '';
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px var(--accent-color);
-  background: var(--accent-color);
+  box-shadow: 0 0 2px 2px var(--color-red-1, #FF0070);
+  background: var(--color-red-1, #FF0070);
   inline-size: 9px;
   block-size: 9px;
 }
 
 .page-title {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  color: var(--page-title-color);
+  color: var(--color-red-2, #DB00FF);
   font-weight: 700;
   font-family: IBM Plex Mono, sans-serif;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--secondary-color, #FF0070);
   margin-block-start: 4px;
   margin-block-end: 16px;
 }
@@ -105,8 +105,8 @@
 .header-text {
   width: 491px;
   height: 71px;
-  background-color: var(--accent-color);
-  color: var(--color-text-black);
+  background-color: var(--color-red-1, #FF0070);
+  color: var(--color-black-1, #000028);
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -119,8 +119,8 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--color-red-1, #FF0070);
+  border-block-start: 1px solid var(--color-red-1, #FF0070);
   inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
@@ -130,8 +130,8 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--color-red-1, #FF0070);
+  border-block-end: 1px solid var(--color-red-1, #FF0070);
   inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
@@ -151,7 +151,7 @@
 }
 
 .title {
-  color: var(--accent-color);
+  color: var(--highlight-color, #FF0070);
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -159,8 +159,8 @@
 }
 
 .title-decor {
-  background-color: var(--accent-color);
-  color: var(--color-text-black);
+  background-color: var(--color-red-1, #FF0070);
+  color: var(--color-black-1, #000028);
 }
 
 .articles-list {
@@ -177,7 +177,7 @@
 }
 
 p {
-  color: var(--color-text-blond);
+  color: var(--color-blond-1, #F1B2CE);
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
@@ -185,11 +185,11 @@ p {
 
 .link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--color-red-1, #FF0070);
 }
 
 .link:hover {
-  border-block-end: 1px solid var(--color-text-blond);
+  border-block-end: 1px solid var(--color-blond-1, #F1B2CE);
 }
 
 .link:focus {
@@ -227,8 +227,8 @@ p {
 }
 
 .background-title-how {
-  color: var(--color-text-black);
-  background-color: var(--accent-color);
+  color: var(--color-black-1, #000028);
+  background-color: var(--color-red-1, #FF0070);
 }
 
 .image-list {
@@ -269,7 +269,7 @@ inline-size: 100%;
 }
 
 .footer-title {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--color-red-1, #FF0070);
   margin-block-end: 1px;
 }
 
