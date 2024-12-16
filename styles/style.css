@@ -117,8 +117,8 @@
 .border-decor::after {
   content: "";
   position: absolute;
-  inline-size: 25px;
   block-size: 25px;
+  inline-size: 25px;
   border-inline-end: 1px solid var(--color-red-1, #FF0070);
   border-block-start: 1px solid var(--color-red-1, #FF0070);
   inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
@@ -128,8 +128,8 @@
 .border-decor::before {
   content: "";
   position: absolute;
-  inline-size: 25px;
   block-size: 25px;
+  inline-size: 25px;
   border-inline-start: 1px solid var(--color-red-1, #FF0070);
   border-block-end: 1px solid var(--color-red-1, #FF0070);
   inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
