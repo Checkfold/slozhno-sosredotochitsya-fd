@@ -10,11 +10,13 @@
     чем стили в медиазапросе предпочтений пользователя
   */
     --page-background-image: url("../images/cover-image-dark.png");
-    --color-red-1: #FF0070;
-    --color-red-2: #DB00FF;
-    --color-black-1: #000028;
-    --color-blond-1: #F1B2CE;
-    --highlight-color: var(--color-red-1, #FF0070);
+    --color-red: #FF0070;
+    --color-violet: #DB00FF;
+    --color-black: #000028;
+    --color-blond: #F1B2CE;
+    --border-color-hover-1: #FF007066;
+    --highlight-color: var(--color-red, #FF0070);
+    --secondary-color: var(--color-red, #FF0070);
     --rec-wanish: visible;
 }
 
@@ -25,7 +27,9 @@
     --color-red-2: #DB00FF;
     --color-black-1: #000028;
     --color-blond-1: #F1B2CE;
+    --border-color-hover-1: #FF007066;
     --highlight-color: var(--color-red-1, #FF0070);
+    --secondary-color: var(--color-red-1, #FF0070);
     --rec-wanish: visible;
   }
 } 

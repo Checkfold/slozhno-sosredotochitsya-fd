@@ -11,29 +11,24 @@
   */
 
  --page-background-image: url("../images/cover-image-light.png");
-  /* --accent-color: var(--accent-color-2, #FF8DCB);
-  --page-title-color: var(--page-title-color-2, #FFC2E6);
-  --acent-color-3: var(--accent-color, #FF0070) */
-  --color-red-1: var(--color-red-3, #FF8DCB);
-  --color-red-2: var(--color-blond-2, #FFC2E6);
-  --color-blond-1: var(--color-black-2, #353430);
-  --color-black-1: var(--color-black-2, #353430);
-  --highlight-color: var(--color-black-2, #353430);
-  --border-color-hover-1: var(--border-color-hover-2, #32312D66);
+  --color-red: var(--color-pink, #FF8DCB);
+  --color-violet: var(--color-white-pink, #FFC2E6);
+  --color-blond: var(----color-grey, #353430);
+  --color-black: var(----color-grey, #353430);
+  --highlight-color: var(--color-grey, #353430);
+  --border-color-hover-brown: var(--border-color-hover-black, #32312D66);
   --rec-wanish: hidden;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --page-background-image: url("../images/cover-image-light.png");
-    /* --accent-color: var(--accent-color-2, #FF8DCB);
-    --page-title-color: var(--page-title-color-2, #FFC2E6); */
-    --color-red-1: var(--color-red-3, #FF8DCB);
-    --color-red-2: var(--color-blond-2, #FFC2E6);
-    --color-blond-1: var(--color-black-2, #353430);
-    --color-black-1: var(--color-black-2, #353430);
-    --highlight-color: var(--color-black-2, #353430);
-    --border-color-hover-1: var(--border-color-hover-2, #32312D66);
+    --color-red: var(--color-pink, #FF8DCB);
+    --color-violet: var(--color-white-pink, #FFC2E6);
+    --color-blond: var(----color-grey, #353430);
+    --color-black: var(----color-grey, #353430);
+    --highlight-color: var(--color-grey, #353430);
+    --border-color-hover-brown: var(--border-color-hover-black, #32312D66);
     --rec-wanish: hidden;
   }
 } 

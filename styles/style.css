@@ -14,7 +14,8 @@
 .header {
   position: relative;
   display: grid;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   padding-inline-start: 0;
 }
@@ -22,7 +23,7 @@
 .header__theme-menu {
   display: flex;
   justify-content: center;
-  margin-block-end: 122px;
+  margin-block-end: 162px;
 }
 
 .header__theme-menu-list {
@@ -34,7 +35,7 @@
 }
 
 .header__theme-menu-button {
-  color: var(--color-red-1, #FF0070);
+  color: var(--highlight-color, #FF0070);
   font-family: IBM Plex Mono, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -47,7 +48,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--highlight-color, #FF0070);
+  border: 1px solid currentColor;
 }
 
 .header__theme-menu-button:hover {
@@ -59,7 +60,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end-color: var(--highlight-color, #FF0070);
+  border-block-end-color: currentColor;
 }
 
 .rec {
@@ -75,7 +76,7 @@
 
 .rec::before {
   content: 'REC';
-  color: var(--color-red-1, #FF0070);
+  color: var(--color-red, #FF0070);
   line-height: 25px;
   font-size: 18px;
 }
@@ -84,54 +85,49 @@
   content: '';
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px var(--color-red-1, #FF0070);
-  background: var(--color-red-1, #FF0070);
+  box-shadow: 0 0 2px 2px var(--color-red, #FF0070);
+  background: var(--color-red, #FF0070);
   inline-size: 9px;
   block-size: 9px;
 }
 
 .page-title {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  color: var(--color-red-2, #DB00FF);
+  color: var(--color-violet, #DB00FF);
   font-weight: 700;
   font-family: IBM Plex Mono, sans-serif;
   text-shadow: 4px 4px 0 var(--secondary-color, #FF0070);
-  margin-block-start: 4px;
-  margin-block-end: 16px;
+  line-height: 82.5%;
 }
-
-/* inline-size: clamp(364px, calc(100% / 2 - 10px), 491px) */
 
 .header-text {
   width: 491px;
-  height: 71px;
-  background-color: var(--color-red-1, #FF0070);
-  color: var(--color-black-1, #000028);
+  background-color: var(--color-red, #FF0070);
+  color: var(--color-black, #000028);
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
   justify-self: end;
-  margin-block-end: -2px;
 }
 
-.border-decor::after {
+.decorated-zone::after {
   content: "";
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
-  border-inline-end: 1px solid var(--color-red-1, #FF0070);
-  border-block-start: 1px solid var(--color-red-1, #FF0070);
+  border-inline-end: 1px solid var(--color-red, #FF0070);
+  border-block-start: 1px solid var(--color-red, #FF0070);
   inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
-.border-decor::before {
+.decorated-zone::before {
   content: "";
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
-  border-inline-start: 1px solid var(--color-red-1, #FF0070);
-  border-block-end: 1px solid var(--color-red-1, #FF0070);
+  border-inline-start: 1px solid var(--color-red, #FF0070);
+  border-block-end: 1px solid var(--color-red, #FF0070);
   inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
   inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
@@ -159,8 +155,11 @@
 }
 
 .title-decor {
-  background-color: var(--color-red-1, #FF0070);
-  color: var(--color-black-1, #000028);
+  background-color: var(--color-red, #FF0070);
+  color: var(--color-black, #000028);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
 }
 
 .articles-list {
@@ -177,7 +176,7 @@
 }
 
 p {
-  color: var(--color-blond-1, #F1B2CE);
+  color: var(--color-blond, #F1B2CE);
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
@@ -185,11 +184,11 @@ p {
 
 .link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--color-red-1, #FF0070);
+  text-shadow: 2px 2px 0 var(--color-red, #FF0070);
 }
 
 .link:hover {
-  border-block-end: 1px solid var(--color-blond-1, #F1B2CE);
+  border-block-end: 1px solid currentColor;
 }
 
 .link:focus {
@@ -227,8 +226,8 @@ p {
 }
 
 .background-title-how {
-  color: var(--color-black-1, #000028);
-  background-color: var(--color-red-1, #FF0070);
+  color: var(--color-black, #000028);
+  background-color: var(--color-red, #FF0070);
 }
 
 .image-list {
@@ -254,11 +253,11 @@ p {
 }
 
 img {
-display: block;
-object-fit: cover;
-object-position: center;
-block-size: 100%;
-inline-size: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 .section-img h2 {
@@ -269,14 +268,15 @@ inline-size: 100%;
 }
 
 .footer-title {
-  text-shadow: 2px 2px 0 var(--color-red-1, #FF0070);
+  text-shadow: 2px 2px 0 var(--color-red, #FF0070);
   margin-block-end: 1px;
 }
 
 .footer {
   display: grid;
   padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   position: relative;
   align-content: center;
   justify-content: center;
@@ -292,28 +292,20 @@ inline-size: 100%;
 
     .header__theme-menu {
       justify-content: end;
-      margin-block-start: 17px;
+      margin-block-end: 177px;
     }
   
     .header__theme-menu-list {
       display: flex;
       flex-direction: column;
       justify-content: end;
-      margin-block-start: 112px;
-      margin-block-end: -15px;
-    }
-    
-    .page-title {
-      margin-block-start: 0px;
-      padding-block-start: 0px;
-      padding-block-end: 67px;
+      gap: 13px;
+      margin-block-start: 10px;
     }
 
     .header-text {
       justify-self: end;
       inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
-      height: 117px;
-      margin-block-end: 72px;
     }
 
     .section-why {
@@ -335,39 +327,58 @@ inline-size: 100%;
     }
 
     .footer-title {
-      margin-block-start: 75px;
+      margin-block-start: 10px;
     }
 }
 
-@media (width <= 375px) {
+@media (width <= 767px) {
+
   .header {
     padding-inline-start: 10px;
-    min-block-size: 100vh;
   }
 
   .header__theme-menu {
-    margin-block-end: 39px;
-    margin-block-start: 36px;
+    margin-block-start: 37px;
+    margin-block-end: 68px;
+  }
+
+  .header-text {
+    width: 100%;
+    margin-block-start: 28px;
+    justify-self: center;
+  }
+
+  .section-why {
+    display: block;
+  }
+
+  .section-how {
+    display: block;
+  }
+}
+
+@media (width <= 375px) {
+
+  .header__theme-menu {
+    margin-block-start: 8px;
+    margin-block-end: 69px;
   }
 
   .header__theme-menu-list {
     margin: 0;
-    gap: 15px;
+    gap: 13px;
   }
 
   .page-title {
     font-weight: 700;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 82.5%;
-    margin: 0;
-    padding: 0;
   }
 
   .header-text {
-    margin: 0;
     max-width: 355px;
     width: 100%;
-    margin-block-start: 29px;
+    margin: 0;
   }
 
   .rec {
@@ -380,8 +391,14 @@ inline-size: 100%;
   }
 
   .section-why h2 {
-    margin-block-start: -10px;
+    margin: 0;
     margin-block-end: 20px;
+
+  }
+
+  .section-how h2 {
+    margin: 0;
+    margin-block-end: 19px;
   }
 
   .section-what {
@@ -398,7 +415,7 @@ inline-size: 100%;
   }
 
   .page {
-    gap: 50px;
+    gap: 40px;
   }
 
   .main {
@@ -408,11 +425,11 @@ inline-size: 100%;
   }
 
   div .title-decor {
-    margin-block-start: 18px;
     font-size: 18px;
   }
 
   .section-img h2 {
+    margin: 0;
     margin-block-end: 10px;
   }
 
@@ -420,10 +437,6 @@ inline-size: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-
-  .footer {
-    margin-block-start: -10px;
   }
 
 }

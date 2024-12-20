@@ -7,21 +7,21 @@
 :root {
   --page-background-image: url("../images/cover-image-dark.png");
 
-  --color-red-1: #FF0070;
-  --color-red-2: #DB00FF;
-  --color-red-3: #FF8DCB;
+  --color-red: #FF0070;
+  --color-violet: #DB00FF;
+  --color-pink: #FF8DCB;
 
-  --color-blond-1: #F1B2CE;
-  --color-blond-2: #FFC2E6;
+  --color-blond: #F1B2CE;
+  --color-white-pink: #FFC2E6;
 
-  --color-black-1: #000028;
-  --color-black-2: #353430;
+  --color-black: #000028;
+  --color-grey: #353430;
 
-  --border-color-hover-1: #FF007066;
-  --border-color-hover-2: #32312D66;
+  --border-color-hover-brown: #FF007066;
+  --border-color-hover-black: #32312D66;
 
-  --secondary-color: var(--color-red-1, #FF0070);
-  --highlight-color: var(--color-red-1, #FF0070);
+  --secondary-color: var(--color-red, #FF0070);
+  --highlight-color: var(--color-red, #FF0070);
 
   --rec-wanish: visible;
 }
